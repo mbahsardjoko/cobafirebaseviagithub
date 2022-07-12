@@ -20,11 +20,11 @@ jobs:
           args: deploy --only hosting
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          
-      - run: firebase deploy --only hosting
-      - uses: FirebaseExtended/action-hosting-deploy@v0
-        with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_HARIINIMENAKJUBKAN14 }}'
-          channelId: live
-          projectId: hariinimenakjubkan14
+
+     # - run: firebase deploy --only hosting
+     # - uses: FirebaseExtended/action-hosting-deploy@v0
+      #  with:
+      #    repoToken: '${{ secrets.GITHUB_TOKEN }}'
+       #   firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_HARIINIMENAKJUBKAN14 }}'
+       #   channelId: live
+       #   projectId: hariinimenakjubkan14
